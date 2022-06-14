@@ -1,0 +1,96 @@
+body {
+    background-image:url(./imagenes/copia2mesaprueba3.png);
+    /*background-size: 600px;*/
+    background-size: 800px;
+    background-repeat: repeat-x;    
+    background-position: 50vh;
+    /*background-position-x: 42vh;*/
+    background-position-x: 45vh;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 59px;
+
+    /*background-color: rgb(192, 134, 134); */
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 12px;
+    align-items: center;border-radius: 18px;
+    position: fixed;
+    top: 0px;
+    z-index: 2 !important ;
+    pointer-events: auto;
+}
+
+header nav{
+    grid-column: 9 / 11;
+    display: flex; 
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 30px;
+    /*color: rgb(0, 0, 0);*/
+}
+
+
+
+#lupa:hover{
+    cursor:pointer !important;
+}
+
+#menu:hover{
+    cursor:pointer !important;
+}
+
+#mainlayout {
+
+    overflow-x: scroll;
+    
+    width: 100vw;
+    height: 15vh; /*calc(100vh - 20px);*/
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /*background-color: rgb(237, 237, 237);*/
+    display: grid;
+    position: fixed;
+    top: 0px;;
+}
+
+#titulo {
+    margin-top: 50px;
+    display: grid;
+    grid-column: 3/8;
+    grid-row: 1/2;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Courier Prime', monospace;
+}
+
+
+    #modelos {
+        width: 1000vh;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 28vh;
+        z-index: 150;
+
+    }
+    model-viewer.modelviewer{
+        margin-top: 25vh;
+        width: 400px !important;
+        height: 400px !important;
+        z-index: 150;
+        position: relative;
+
+
+    }
+
+.pieza {
+    margin-top: 350px;
+}
